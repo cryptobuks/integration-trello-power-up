@@ -2,6 +2,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.org/z586/rt.svg?branch=master)](https://travis-ci.org/z586/rt)
 [![codecov](https://codecov.io/gh/InVisionApp/integration-trello-power-up/branch/master/graph/badge.svg?token=yBBiUgAgjt)](https://codecov.io/gh/InVisionApp/integration-trello-power-up)
 
 <img align="right" width="350px" src="images/preview.png">

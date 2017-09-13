@@ -1,0 +1,38 @@
+a,
+a:visited {
+  color: #8c8c8c;
+}
+a:hover {
+  color: #4d4d4d;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+ul {
+  margin: 0px;
+}
+
+hr {
+  margin: 8px 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.quiet {
+  color: #8c8c8c;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

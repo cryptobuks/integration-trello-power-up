@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    %REACT_APP_CUSTOM_HEAD%
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
+    <script src="https://trello.com/power-ups/power-up.min.js"></script>
+    <title>InVision</title>
+    <script>
+      window.InVisionConfig = {
+        clientKey: "%REACT_APP_CLIENT_KEY%",
+        projectsUrl: "%REACT_APP_PROJECTS_URL%",
+        apiUrl: "%REACT_APP_API_URL%",
+        baseUrl: "%REACT_APP_BASE_URL%"
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    %REACT_APP_CUSTOM_BODY%
+  </body>
+</html>

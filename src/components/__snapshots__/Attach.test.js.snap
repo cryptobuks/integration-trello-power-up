@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Attach should render  1`] = `
+<Attach>
+  <fieldset
+    className="Attach Attach--valid"
+  >
+    <form
+      id="attach"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="sharelink"
+      >
+        Attach a link
+      </label>
+      <input
+        className="Attach__Input"
+        id="sharelink"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Paste prototype share link here…"
+        type="text"
+      />
+      <button
+        className="Attach__Submit"
+        type="submit"
+      >
+        Attach
+      </button>
+    </form>
+    <hr />
+    <div
+      className="quiet u-bottom"
+    >
+      Tip: Add a prototype's 
+      <strong>
+        share URL
+      </strong>
+       to communicate your vision.
+      <ul>
+        <li>
+          <a
+            href="https://support.invisionapp.com/hc/en-us"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Learn more
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://invisionapp.com/p"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Create a new prototype
+          </a>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</Attach>
+`;

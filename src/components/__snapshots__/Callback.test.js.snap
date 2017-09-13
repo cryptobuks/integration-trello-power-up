@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Callback should render and set token opener 1`] = `
+<Callback>
+  <div
+    className="Callback"
+  >
+    <h1>
+      You're set!
+    </h1>
+    <p>
+      This window should close automatically. If it doesn't, go ahead and close it.
+    </p>
+  </div>
+</Callback>
+`;
+
+exports[`Callback should render and set token to local storage 1`] = `
+<Callback>
+  <div
+    className="Callback"
+  >
+    <h1>
+      You're set!
+    </h1>
+    <p>
+      This window should close automatically. If it doesn't, go ahead and close it.
+    </p>
+  </div>
+</Callback>
+`;

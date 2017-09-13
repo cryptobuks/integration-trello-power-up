@@ -1,0 +1,18 @@
+{
+  "name": "InVision",
+  "description": "InVision Trello Power-Up",
+  "details": "**[InVision](https://www.invisionapp.com/)** is the world’s leading design collaboration platform helping teams of all sizes deliver better digital experiences, faster, together. Millions of customers use InVision to brainstorm, prototype, review, iterate, and test web and mobile designs. InVision is used by over 75% of the Fortune 100 and enables product design at leading companies like Airbnb, Shopify, Salesforce, Disney, Netflix, IBM, Walmart, Apple, and more.\n\n**InVision Trello Power-Up**\n\n* Preview InVision prototypes in Trello cards\n* Quick access to prototype comments and Inspect\n* Prototype screen attached as image\n\n### Screenshot\n\n![InVision Attachment section](https://integration-trello.invisionapp.com/screenshot.png)",
+  "icon": {
+    "url": "./logo.svg"
+  },
+  "author": "InVisionApp Inc",
+  "capabilities": ["attachment-sections", "callback", "card-buttons"],
+  "connectors": {
+    "iframe": {
+      "url": "./"
+    }
+  },
+  "recommend": {
+    "urls": ["https://www.invisionapp.com/"]
+  }
+}

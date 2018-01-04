@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewError should render 1`] = `
+<PreviewError
+  attachment={
+    Object {
+      "url": "https://google.com",
+    }
+  }
+>
+  <p
+    className="PreviewError basic-attachment-list-item"
+  >
+    <a
+      href="https://google.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      https://google.com
+    </a>
+     
+    is not valid or password protected.
+     
+    <a
+      href=""
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Disconnect prototype
+    </a>
+     
+    or reach out to
+     
+    <a
+      href="mailto:support@invisionapp.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      support@invisionapp.com
+    </a>
+     
+    for more information
+  </p>
+</PreviewError>
+`;

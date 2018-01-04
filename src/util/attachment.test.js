@@ -14,7 +14,7 @@ describe('attachment', () => {
   it('should get meta', () => {
     return attachment.meta('https://invis.io/ADSF324').then(() => {
       expect(fetch).toHaveBeenCalledWith(
-        'https://invisionapp.com/api/api/share/https%3A%2F%2Finvis.io%2FADSF324'
+        'https://invisionapp.com/base/meta-bff/share?shareurl=https%3A%2F%2Finvis.io%2FADSF324'
       )
       expect(fetchRes.json).toHaveBeenCalled()
     })

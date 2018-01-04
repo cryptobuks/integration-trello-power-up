@@ -1,8 +1,8 @@
 const config = {
   clientKey: 'key',
   projectsUrl: 'https://invisionapp.com/p',
-  apiUrl: 'https://invisionapp.com/api',
-  baseUrl: 'https://invisionapp.com/base'
+  baseUrl: 'https://invisionapp.com/base',
+  pathPrefix: 'trello'
 }
 
 export default config

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint-plugin-node": "^5.2.1",
     "moment": "^2.18.1",
     "react": "^15.6.1",
     "react-addons-update": "^15.6.0",
@@ -32,6 +33,7 @@
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-standard": "3.0.1",
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "0.11.2",
     "flow-bin": "^0.52.0",
@@ -47,7 +49,7 @@
     "postcss-loader": "2.0.6",
     "prettier-eslint": "^6.4.2",
     "prettier-eslint-cli": "^4.2.1",
-    "prettier-standard": "^6.0.0",
+    "prettier-standard": "^8.0.0",
     "promise": "8.0.1",
     "react-dev-utils": "^3.1.0",
     "react-error-overlay": "^1.0.10",
@@ -148,8 +150,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-standard"
   }
 }

@@ -3,7 +3,7 @@ import T from './trello.js'
 
 export function meta (url) {
   return new T.Promise((resolve, reject) => {
-    fetch(`${config.apiUrl}/api/share/${encodeURIComponent(url)}`).then(res => {
+    fetch(`${config.baseUrl}/meta-bff/share?shareurl=${encodeURIComponent(url)}`).then(res => {
       if (res.ok) {
         resolve(res.json())
       } else {

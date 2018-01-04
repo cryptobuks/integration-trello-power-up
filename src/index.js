@@ -7,6 +7,7 @@ import App from './components/App.js'
 import Callback from './components/Callback.js'
 import './index.css'
 import auth from './util/auth'
+import config from './util/config'
 
 const checkAuth = (nextState, replace, callback) => {
   auth
@@ -20,7 +21,7 @@ const checkAuth = (nextState, replace, callback) => {
 }
 
 ReactDOM.render(
-  <Router basename='/'>
+  <Router basename={config.pathPrefix}>
     <Switch>
       <Route path='/' exact component={App} />}/>
       <Route path='/attach' component={Attach} onEnter={checkAuth} />} />

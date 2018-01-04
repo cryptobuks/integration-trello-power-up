@@ -16,15 +16,26 @@ export default class Preview extends React.Component {
     this.getLinks = this.getLinks.bind(this)
   }
 
+  componentDidMount () {
+    const { names: { attachmentViewed }, props } = analytics
+    if (!this.props.meta.shareUrl) {
+      return analytics.track(attachmentViewed, props.viewEmpty)
+    }
+    if (this.props.meta.shareType === 'UDF') {
+      return analytics.track(attachmentViewed, props.viewUDF)
+    }
+    return analytics.track(attachmentViewed, props.viewPrototype)
+  }
+
   makeCover (event) {
     event.preventDefault()
-    analytics.track('Trello.MakeCover')
+    analytics.track(analytics.names.cardCover, analytics.props.coverAdded)
     return cover.make(this.props.meta).then(this.props.updateCover)
   }
 
   removeCover (event) {
     event.preventDefault()
-    analytics.track('Trello.RemoveCover')
+    analytics.track(analytics.names.cardCover, analytics.props.coverRemoved)
     return cover.remove(this.props.meta).then(this.props.updateCover)
   }
 
@@ -57,19 +68,19 @@ export default class Preview extends React.Component {
         url: this.props.meta.commentUrl,
         text: 'Comment',
         className: 'comment',
-        name: 'Trello.OpenComments'
+        name: analytics.props.comment
       },
       {
         url: this.props.meta.previewUrl,
         text: 'Preview',
         className: 'preview',
-        name: 'Trello.OpenPreview'
+        name: analytics.props.preview
       },
       {
         url: this.props.meta.inspectUrl,
         text: 'Inspect',
         className: 'inspect',
-        name: 'Trello.OpenInspect'
+        name: analytics.props.inspect
       }
     ]
   }
@@ -84,10 +95,16 @@ export default class Preview extends React.Component {
       <div className='SectionItem basic-attachment-list-item'>
         <a
           className='SectionItem__Preview'
-          href={this.props.meta.commentUrl}
-          target={this.props.meta.commentUrl}
+          href={this.props.meta.shareUrl}
+          target={this.props.meta.shareUrl}
           title={this.props.meta.screenName}
           style={backgroundStyle}
+          onClick={() =>
+            analytics.track(
+              analytics.names.linkClicked,
+              analytics.props.thumbnail
+            )
+          }
         />
         <p className='SectionItemDetails attachment-thumbnail-details'>
           <span className='SectionItemDetails__Name'>
@@ -98,7 +115,9 @@ export default class Preview extends React.Component {
               return (
                 <SectionItemLink
                   {...link}
-                  handler={() => analytics.track(link.name)}
+                  handler={() =>
+                    analytics.track(analytics.names.linkClicked, link.name)
+                  }
                   key={this.props.attachment.id + link.className}
                 />
               )
@@ -126,7 +145,8 @@ export default class Preview extends React.Component {
                 className='date'
                 title={moment(this.props.meta.lastUpdatedAt).fromNow()}
               >
-                {' '}{moment(this.props.meta.lastUpdatedAt).fromNow()}
+                {' '}
+                {moment(this.props.meta.lastUpdatedAt).fromNow()}
               </span>{' '}
               by {this.props.meta.userName}
             </span>

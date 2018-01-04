@@ -42,7 +42,11 @@ export default class SectionItem extends React.Component {
 
   disconnect (event) {
     event.preventDefault()
-    analytics.track('Trello.RemovePrototype')
+    let prop =
+      this.state.meta.shareType === 'UDF'
+        ? analytics.props.removeUDF
+        : analytics.props.removePrototype
+    analytics.track(analytics.names.attachmentChanged, prop)
     auth
       .token()
       .then(token => {

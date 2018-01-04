@@ -1,0 +1,889 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preview Preview with cover should be able disconnect prototype and cover 1`] = `
+<Preview
+  attachment={
+    Object {
+      "id": 1,
+      "url": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  card={
+    Object {
+      "id": 3,
+    }
+  }
+  cover={
+    Object {
+      "id": 2,
+      "name": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  meta={
+    Object {
+      "commentUrl": "https://projects.invisionapp.com/comments",
+      "companyDomain": "https://projects.invisionapp.com",
+      "companyName": "",
+      "inspectUrl": "https://projects.invisionapp.com/inspect",
+      "lastUpdatedAt": 1503077755000,
+      "mobileDeviceName": "iPhone",
+      "previewImgUrl": "https://s3.invisionapp-cdn.com/some.png",
+      "previewUrl": "https://projects.invisionapp.com/preview",
+      "projectName": "Mobile App Prototype",
+      "screenCount": 28,
+      "screenName": "Compose - Blank",
+      "shareUrl": "https://invis.io/28D3U4ZCP",
+      "userName": "Yauhen Ivashkevich",
+    }
+  }
+  updateCover={[Function]}
+>
+  <div
+    className="SectionItem basic-attachment-list-item"
+  >
+    <a
+      className="SectionItem__Preview"
+      href="https://invis.io/28D3U4ZCP"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url('https://s3.invisionapp-cdn.com/some.png')",
+          "backgroundPositionY": "0px",
+          "backgroundSize": "cover",
+        }
+      }
+      target="https://invis.io/28D3U4ZCP"
+      title="Compose - Blank"
+    />
+    <p
+      className="SectionItemDetails attachment-thumbnail-details"
+    >
+      <span
+        className="SectionItemDetails__Name"
+      >
+        Compose - Blank
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="comment"
+          handler={[Function]}
+          name="comment"
+          text="Comment"
+          url="https://projects.invisionapp.com/comments"
+        >
+          <span>
+            <a
+              className="comment"
+              href="https://projects.invisionapp.com/comments"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/comments"
+            >
+              Comment
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="preview"
+          handler={[Function]}
+          name="preview"
+          text="Preview"
+          url="https://projects.invisionapp.com/preview"
+        >
+          <span>
+            <a
+              className="preview"
+              href="https://projects.invisionapp.com/preview"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/preview"
+            >
+              Preview
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="inspect"
+          handler={[Function]}
+          name="inspect"
+          text="Inspect"
+          url="https://projects.invisionapp.com/inspect"
+        >
+          <span>
+            <a
+              className="inspect"
+              href="https://projects.invisionapp.com/inspect"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/inspect"
+            >
+              Inspect
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="remove-cover"
+          handler={[Function]}
+          text="Remove from cover"
+        >
+          <span>
+            <a
+              className="remove-cover"
+              href=""
+              onClick={[Function]}
+            >
+              Remove from cover
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="disconnect"
+          text="Disconnect prototype"
+        >
+          <span>
+            <a
+              className="disconnect"
+              href=""
+            >
+              Disconnect prototype
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="attachment-thumbnail-details-title"
+        href="https://projects.invisionapp.com/comments"
+        target="https://projects.invisionapp.com/comments"
+        title="Compose - Blank"
+      >
+        <span
+          className="u-block quiet"
+        >
+          Modified:
+          <span
+            className="date"
+            title="5 months ago"
+          >
+             
+            5 months ago
+          </span>
+           
+          by 
+          Yauhen Ivashkevich
+        </span>
+      </span>
+    </p>
+  </div>
+</Preview>
+`;
+
+exports[`Preview Preview with cover should be able to remove cover 1`] = `
+<Preview
+  attachment={
+    Object {
+      "id": 1,
+      "url": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  card={
+    Object {
+      "id": 3,
+    }
+  }
+  cover={
+    Object {
+      "id": 2,
+      "name": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  meta={
+    Object {
+      "commentUrl": "https://projects.invisionapp.com/comments",
+      "companyDomain": "https://projects.invisionapp.com",
+      "companyName": "",
+      "inspectUrl": "https://projects.invisionapp.com/inspect",
+      "lastUpdatedAt": 1503077755000,
+      "mobileDeviceName": "iPhone",
+      "previewImgUrl": "https://s3.invisionapp-cdn.com/some.png",
+      "previewUrl": "https://projects.invisionapp.com/preview",
+      "projectName": "Mobile App Prototype",
+      "screenCount": 28,
+      "screenName": "Compose - Blank",
+      "shareUrl": "https://invis.io/28D3U4ZCP",
+      "userName": "Yauhen Ivashkevich",
+    }
+  }
+  updateCover={[Function]}
+>
+  <div
+    className="SectionItem basic-attachment-list-item"
+  >
+    <a
+      className="SectionItem__Preview"
+      href="https://invis.io/28D3U4ZCP"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url('https://s3.invisionapp-cdn.com/some.png')",
+          "backgroundPositionY": "0px",
+          "backgroundSize": "cover",
+        }
+      }
+      target="https://invis.io/28D3U4ZCP"
+      title="Compose - Blank"
+    />
+    <p
+      className="SectionItemDetails attachment-thumbnail-details"
+    >
+      <span
+        className="SectionItemDetails__Name"
+      >
+        Compose - Blank
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="comment"
+          handler={[Function]}
+          name="comment"
+          text="Comment"
+          url="https://projects.invisionapp.com/comments"
+        >
+          <span>
+            <a
+              className="comment"
+              href="https://projects.invisionapp.com/comments"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/comments"
+            >
+              Comment
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="preview"
+          handler={[Function]}
+          name="preview"
+          text="Preview"
+          url="https://projects.invisionapp.com/preview"
+        >
+          <span>
+            <a
+              className="preview"
+              href="https://projects.invisionapp.com/preview"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/preview"
+            >
+              Preview
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="inspect"
+          handler={[Function]}
+          name="inspect"
+          text="Inspect"
+          url="https://projects.invisionapp.com/inspect"
+        >
+          <span>
+            <a
+              className="inspect"
+              href="https://projects.invisionapp.com/inspect"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/inspect"
+            >
+              Inspect
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="remove-cover"
+          handler={[Function]}
+          text="Remove from cover"
+        >
+          <span>
+            <a
+              className="remove-cover"
+              href=""
+              onClick={[Function]}
+            >
+              Remove from cover
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="disconnect"
+          text="Disconnect prototype"
+        >
+          <span>
+            <a
+              className="disconnect"
+              href=""
+            >
+              Disconnect prototype
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="attachment-thumbnail-details-title"
+        href="https://projects.invisionapp.com/comments"
+        target="https://projects.invisionapp.com/comments"
+        title="Compose - Blank"
+      >
+        <span
+          className="u-block quiet"
+        >
+          Modified:
+          <span
+            className="date"
+            title="5 months ago"
+          >
+             
+            5 months ago
+          </span>
+           
+          by 
+          Yauhen Ivashkevich
+        </span>
+      </span>
+    </p>
+  </div>
+</Preview>
+`;
+
+exports[`Preview Preview with cover should be able to track navigation clicks 1`] = `
+<Preview
+  attachment={
+    Object {
+      "id": 1,
+      "url": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  card={
+    Object {
+      "id": 3,
+    }
+  }
+  cover={
+    Object {
+      "id": 2,
+      "name": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  meta={
+    Object {
+      "commentUrl": "https://projects.invisionapp.com/comments",
+      "companyDomain": "https://projects.invisionapp.com",
+      "companyName": "",
+      "inspectUrl": "https://projects.invisionapp.com/inspect",
+      "lastUpdatedAt": 1503077755000,
+      "mobileDeviceName": "iPhone",
+      "previewImgUrl": "https://s3.invisionapp-cdn.com/some.png",
+      "previewUrl": "https://projects.invisionapp.com/preview",
+      "projectName": "Mobile App Prototype",
+      "screenCount": 28,
+      "screenName": "Compose - Blank",
+      "shareUrl": "https://invis.io/28D3U4ZCP",
+      "userName": "Yauhen Ivashkevich",
+    }
+  }
+  updateCover={[Function]}
+>
+  <div
+    className="SectionItem basic-attachment-list-item"
+  >
+    <a
+      className="SectionItem__Preview"
+      href="https://invis.io/28D3U4ZCP"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url('https://s3.invisionapp-cdn.com/some.png')",
+          "backgroundPositionY": "0px",
+          "backgroundSize": "cover",
+        }
+      }
+      target="https://invis.io/28D3U4ZCP"
+      title="Compose - Blank"
+    />
+    <p
+      className="SectionItemDetails attachment-thumbnail-details"
+    >
+      <span
+        className="SectionItemDetails__Name"
+      >
+        Compose - Blank
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="comment"
+          handler={[Function]}
+          name="comment"
+          text="Comment"
+          url="https://projects.invisionapp.com/comments"
+        >
+          <span>
+            <a
+              className="comment"
+              href="https://projects.invisionapp.com/comments"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/comments"
+            >
+              Comment
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="preview"
+          handler={[Function]}
+          name="preview"
+          text="Preview"
+          url="https://projects.invisionapp.com/preview"
+        >
+          <span>
+            <a
+              className="preview"
+              href="https://projects.invisionapp.com/preview"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/preview"
+            >
+              Preview
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="inspect"
+          handler={[Function]}
+          name="inspect"
+          text="Inspect"
+          url="https://projects.invisionapp.com/inspect"
+        >
+          <span>
+            <a
+              className="inspect"
+              href="https://projects.invisionapp.com/inspect"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/inspect"
+            >
+              Inspect
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="remove-cover"
+          handler={[Function]}
+          text="Remove from cover"
+        >
+          <span>
+            <a
+              className="remove-cover"
+              href=""
+              onClick={[Function]}
+            >
+              Remove from cover
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="disconnect"
+          text="Disconnect prototype"
+        >
+          <span>
+            <a
+              className="disconnect"
+              href=""
+            >
+              Disconnect prototype
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="attachment-thumbnail-details-title"
+        href="https://projects.invisionapp.com/comments"
+        target="https://projects.invisionapp.com/comments"
+        title="Compose - Blank"
+      >
+        <span
+          className="u-block quiet"
+        >
+          Modified:
+          <span
+            className="date"
+            title="5 months ago"
+          >
+             
+            5 months ago
+          </span>
+           
+          by 
+          Yauhen Ivashkevich
+        </span>
+      </span>
+    </p>
+  </div>
+</Preview>
+`;
+
+exports[`Preview Preview without cover should be able disconnect prototype and cover 1`] = `
+<Preview
+  attachment={
+    Object {
+      "id": 1,
+      "url": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  card={
+    Object {
+      "id": 3,
+    }
+  }
+  meta={
+    Object {
+      "commentUrl": "https://projects.invisionapp.com/comments",
+      "companyDomain": "https://projects.invisionapp.com",
+      "companyName": "",
+      "inspectUrl": "https://projects.invisionapp.com/inspect",
+      "lastUpdatedAt": 1503077755000,
+      "mobileDeviceName": "iPhone",
+      "previewImgUrl": "https://s3.invisionapp-cdn.com/some.png",
+      "previewUrl": "https://projects.invisionapp.com/preview",
+      "projectName": "Mobile App Prototype",
+      "screenCount": 28,
+      "screenName": "Compose - Blank",
+      "shareUrl": "https://invis.io/28D3U4ZCP",
+      "userName": "Yauhen Ivashkevich",
+    }
+  }
+  updateCover={[Function]}
+>
+  <div
+    className="SectionItem basic-attachment-list-item"
+  >
+    <a
+      className="SectionItem__Preview"
+      href="https://invis.io/28D3U4ZCP"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url('https://s3.invisionapp-cdn.com/some.png')",
+          "backgroundPositionY": "0px",
+          "backgroundSize": "cover",
+        }
+      }
+      target="https://invis.io/28D3U4ZCP"
+      title="Compose - Blank"
+    />
+    <p
+      className="SectionItemDetails attachment-thumbnail-details"
+    >
+      <span
+        className="SectionItemDetails__Name"
+      >
+        Compose - Blank
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="comment"
+          handler={[Function]}
+          name="comment"
+          text="Comment"
+          url="https://projects.invisionapp.com/comments"
+        >
+          <span>
+            <a
+              className="comment"
+              href="https://projects.invisionapp.com/comments"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/comments"
+            >
+              Comment
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="preview"
+          handler={[Function]}
+          name="preview"
+          text="Preview"
+          url="https://projects.invisionapp.com/preview"
+        >
+          <span>
+            <a
+              className="preview"
+              href="https://projects.invisionapp.com/preview"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/preview"
+            >
+              Preview
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="inspect"
+          handler={[Function]}
+          name="inspect"
+          text="Inspect"
+          url="https://projects.invisionapp.com/inspect"
+        >
+          <span>
+            <a
+              className="inspect"
+              href="https://projects.invisionapp.com/inspect"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/inspect"
+            >
+              Inspect
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="make-cover"
+          handler={[Function]}
+          text="Make cover"
+        >
+          <span>
+            <a
+              className="make-cover"
+              href=""
+              onClick={[Function]}
+            >
+              Make cover
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="disconnect"
+          text="Disconnect prototype"
+        >
+          <span>
+            <a
+              className="disconnect"
+              href=""
+            >
+              Disconnect prototype
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="attachment-thumbnail-details-title"
+        href="https://projects.invisionapp.com/comments"
+        target="https://projects.invisionapp.com/comments"
+        title="Compose - Blank"
+      >
+        <span
+          className="u-block quiet"
+        >
+          Modified:
+          <span
+            className="date"
+            title="5 months ago"
+          >
+             
+            5 months ago
+          </span>
+           
+          by 
+          Yauhen Ivashkevich
+        </span>
+      </span>
+    </p>
+  </div>
+</Preview>
+`;
+
+exports[`Preview Preview without cover should be able to set cover 1`] = `
+<Preview
+  attachment={
+    Object {
+      "id": 1,
+      "url": "https://invis.io/28D3U4ZCP",
+    }
+  }
+  card={
+    Object {
+      "id": 3,
+    }
+  }
+  meta={
+    Object {
+      "commentUrl": "https://projects.invisionapp.com/comments",
+      "companyDomain": "https://projects.invisionapp.com",
+      "companyName": "",
+      "inspectUrl": "https://projects.invisionapp.com/inspect",
+      "lastUpdatedAt": 1503077755000,
+      "mobileDeviceName": "iPhone",
+      "previewImgUrl": "https://s3.invisionapp-cdn.com/some.png",
+      "previewUrl": "https://projects.invisionapp.com/preview",
+      "projectName": "Mobile App Prototype",
+      "screenCount": 28,
+      "screenName": "Compose - Blank",
+      "shareUrl": "https://invis.io/28D3U4ZCP",
+      "userName": "Yauhen Ivashkevich",
+    }
+  }
+  updateCover={[Function]}
+>
+  <div
+    className="SectionItem basic-attachment-list-item"
+  >
+    <a
+      className="SectionItem__Preview"
+      href="https://invis.io/28D3U4ZCP"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url('https://s3.invisionapp-cdn.com/some.png')",
+          "backgroundPositionY": "0px",
+          "backgroundSize": "cover",
+        }
+      }
+      target="https://invis.io/28D3U4ZCP"
+      title="Compose - Blank"
+    />
+    <p
+      className="SectionItemDetails attachment-thumbnail-details"
+    >
+      <span
+        className="SectionItemDetails__Name"
+      >
+        Compose - Blank
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="comment"
+          handler={[Function]}
+          name="comment"
+          text="Comment"
+          url="https://projects.invisionapp.com/comments"
+        >
+          <span>
+            <a
+              className="comment"
+              href="https://projects.invisionapp.com/comments"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/comments"
+            >
+              Comment
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="preview"
+          handler={[Function]}
+          name="preview"
+          text="Preview"
+          url="https://projects.invisionapp.com/preview"
+        >
+          <span>
+            <a
+              className="preview"
+              href="https://projects.invisionapp.com/preview"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/preview"
+            >
+              Preview
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="inspect"
+          handler={[Function]}
+          name="inspect"
+          text="Inspect"
+          url="https://projects.invisionapp.com/inspect"
+        >
+          <span>
+            <a
+              className="inspect"
+              href="https://projects.invisionapp.com/inspect"
+              onClick={[Function]}
+              target="https://projects.invisionapp.com/inspect"
+            >
+              Inspect
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="u-block quiet SectionItemDetails__Actions"
+      >
+        <SectionItemLink
+          className="make-cover"
+          handler={[Function]}
+          text="Make cover"
+        >
+          <span>
+            <a
+              className="make-cover"
+              href=""
+              onClick={[Function]}
+            >
+              Make cover
+            </a>
+          </span>
+        </SectionItemLink>
+        <SectionItemLink
+          className="disconnect"
+          text="Disconnect prototype"
+        >
+          <span>
+            <a
+              className="disconnect"
+              href=""
+            >
+              Disconnect prototype
+            </a>
+          </span>
+        </SectionItemLink>
+      </span>
+      <span
+        className="attachment-thumbnail-details-title"
+        href="https://projects.invisionapp.com/comments"
+        target="https://projects.invisionapp.com/comments"
+        title="Compose - Blank"
+      >
+        <span
+          className="u-block quiet"
+        >
+          Modified:
+          <span
+            className="date"
+            title="5 months ago"
+          >
+             
+            5 months ago
+          </span>
+           
+          by 
+          Yauhen Ivashkevich
+        </span>
+      </span>
+    </p>
+  </div>
+</Preview>
+`;

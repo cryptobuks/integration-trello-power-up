@@ -12,7 +12,6 @@ const analytics = {
     cardCover: 'Trello.CardCover.Changed',
     attachmentChanged: 'Trello.Attachment.Changed',
     attachmentViewed: 'Trello.Attachment.Viewed'
-  },
-  isUDFShareUrl: jest.fn()
+  }
 }
 export default analytics

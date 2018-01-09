@@ -1,7 +1,5 @@
-import config from './config'
 // When the app is initializing, window.analytics doesn't exist yet, so we can't check whether it
 // exists now. Instead, we check it on-demand.
-const serverType = config.serverType
 const Analytics = {
   track: (name, props) => {
     if (
@@ -12,29 +10,23 @@ const Analytics = {
       window.measure.collect(name, props)
     }
   },
-  isUDFShareUrl (shareUrl) {
-    return shareUrl.match(/^https:\/\/(([a-z0-9-]+(\.[a-z0-9-]+)*?\.)?(invisionapp\.com|invision\.works)\/prototype)\/[A-Za-z-0-9]*(\/(preview|play|comment|inspect))?/i)
-  },
   props: {
-    thumbnail: { linkClicked: 'thumbnail', serverType },
-    inspect: { linkClicked: 'inspect', serverType },
-    preview: { linkClicked: 'preview', serverType },
-    comment: { linkClicked: 'comment', serverType },
-    removeUDF: { attachmentAction: 'remove', documentType: 'udf', serverType },
+    thumbnail: { linkClicked: 'thumbnail' },
+    inspect: { linkClicked: 'inspect' },
+    preview: { linkClicked: 'preview' },
+    comment: { linkClicked: 'comment' },
+    removeUDF: { attachmentAction: 'remove', documentType: 'udf' },
     removePrototype: {
       attachmentAction: 'remove',
-      documentType: 'prototype',
-      serverType
+      documentType: 'prototype'
     },
-    attachUDF: { attachmentAction: 'attach', documentType: 'udf', serverType },
+    attachUDF: { attachmentAction: 'attach', documentType: 'udf' },
     attachPrototype: {
       attachmentAction: 'attach',
-      documentType: 'prototype',
-      serverType
+      documentType: 'prototype'
     },
     invalidLink: {
-      attachmentAction: 'invalidLink',
-      serverType
+      attachmentAction: 'invalidLink'
     },
     coverAdded: {
       coverAction: 'added'
@@ -42,9 +34,9 @@ const Analytics = {
     coverRemoved: {
       coverAction: 'removed'
     },
-    viewEmpty: { documentType: 'none', serverType },
-    viewPrototype: { documentType: 'prototype', serverType },
-    viewUDF: { documentType: 'udf', serverType }
+    viewEmpty: { documentType: 'none' },
+    viewPrototype: { documentType: 'prototype' },
+    viewUDF: { documentType: 'udf' }
   },
   names: {
     linkClicked: 'Trello.Link.Clicked',

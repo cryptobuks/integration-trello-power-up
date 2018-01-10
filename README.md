@@ -29,7 +29,8 @@ Application provides following environment variables for configuration:
 * `REACT_APP_CUSTOM_HEAD` - whatever needs to be injected into *HEAD* of the application
 * `REACT_APP_CUSTOM_BODY` - whatever needs to be injected into *HEAD* of the application
 * `REACT_APP_CLIENT_KEY` - Trello Client Key
-* `REACT_APP_BASE_URL` - Base URL where application is being hosted
+* `REACT_APP_PATH_PREFIX` - Hosting path prefix relative to PUBLIC_URL, should have leading and trailing `/`, `/` will be used as a default value
+* `REACT_APP_META_URL` - URL of API for fetching public information about shared links
 * `REACT_APP_PROJECTS_URL` - URL to InVision projects page
 
 All the abowe variables need to be configured in `.env` file which should be excluded from the repository. To configure the environment variables please follow the [Create React App documentation](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables)

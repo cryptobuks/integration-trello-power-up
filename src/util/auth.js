@@ -1,10 +1,10 @@
 import config from './config.js'
 import T from './trello.js'
 
-const callbackUrl = `${config.baseUrl}${config.pathPrefix}/callback`
-const authUrl = `https://trello.com/1/authorize?expiration=never&name=InVision&scope=read,write&key=${config.clientKey}&callback_method=fragment&return_url=${encodeURIComponent(
-  callbackUrl
-)}`
+const callbackUrl = `${config.baseUrl}${config.pathPrefix}callback`
+const authUrl = `https://trello.com/1/authorize?expiration=never&name=InVision&scope=read,write&key=${
+  config.clientKey
+}&callback_method=fragment&return_url=${encodeURIComponent(callbackUrl)}`
 
 let isAuthenticated
 

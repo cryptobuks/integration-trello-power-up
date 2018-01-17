@@ -3,20 +3,24 @@ import T from './trello.js'
 
 export function meta (url) {
   return new T.Promise((resolve, reject) => {
-    fetch(`${config.apiUrl}/api/share/${encodeURIComponent(url)}`).then(res => {
-      if (res.ok) {
-        resolve(res.json())
-      } else {
-        reject(res.statusText)
+    fetch(`${config.metaUrl}/share?shareurl=${encodeURIComponent(url)}`).then(
+      res => {
+        if (res.ok) {
+          resolve(res.json())
+        } else {
+          reject(res.statusText)
+        }
       }
-    })
+    )
   })
 }
 
 export function remove (token, card, attachment) {
   return new T.Promise((resolve, reject) => {
     fetch(
-      `https://api.trello.com/1/cards/${card}/attachments/${attachment}/?key=${config.clientKey}&token=${token}`,
+      `https://api.trello.com/1/cards/${card}/attachments/${attachment}/?key=${
+        config.clientKey
+      }&token=${token}`,
       {
         method: 'DELETE'
       }

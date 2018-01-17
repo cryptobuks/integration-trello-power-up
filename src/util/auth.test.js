@@ -25,9 +25,7 @@ describe('auth', () => {
       .token()
       .then(token => {
         expect(token).toBe('some_token')
-        expect(
-          T.iframe().authorize
-        ).toHaveBeenCalledWith(
+        expect(T.iframe().authorize).toHaveBeenCalledWith(
           'https://trello.com/1/authorize?expiration=never&name=InVision&scope=read,write&key=key&callback_method=fragment&return_url=https%3A%2F%2Finvisionapp.com%2Fbase%2Fcallback',
           { height: 680, validToken: auth.validateToken, width: 580 }
         )

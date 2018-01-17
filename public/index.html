@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" href="https://trello.com/power-ups/power-up.css">
-    <script src="https://trello.com/power-ups/power-up.min.js"></script>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
     <title>InVision</title>
     <script>
       window.InVisionConfig = {
-        clientKey: "%REACT_APP_CLIENT_KEY%",
+        clientKey: "%REACT_APP_TRELLO_CLIENT_KEY%",
         projectsUrl: "%REACT_APP_PROJECTS_URL%",
-        apiUrl: "%REACT_APP_API_URL%",
-        baseUrl: "%REACT_APP_BASE_URL%"
+        pathPrefix: "%REACT_APP_PATH_PREFIX%" || '/',
+        metaUrl: "%REACT_APP_META_URL%",
+        version: "%REACT_APP_BUILD_VERSION%",
+        buildDate: "%REACT_APP_BUILD_DATE%"
       }
     </script>
   </head>

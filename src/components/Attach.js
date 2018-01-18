@@ -52,11 +52,13 @@ export default class Attach extends React.Component {
         name: meta.screenName
       })
       .then(() => {
-        let prop =
-          meta.shareType === 'UDF'
-            ? analytics.props.attachUDF
-            : analytics.props.attachPrototype
-        analytics.track(analytics.names.attachmentChanged, prop)
+        let documentType =
+          analytics.documentType[meta.shareType] ||
+          analytics.documentType.Default
+        analytics.track(analytics.names.attachmentChanged, {
+          ...analytics.attachment.attach,
+          ...documentType
+        })
         return this.t.card('cover').then(c => {
           if (!c.cover) {
             return cover.attach(meta)
@@ -76,14 +78,18 @@ export default class Attach extends React.Component {
     event.preventDefault()
     if (!this.linkInput.value || !isInVisionUrl(this.linkInput.value)) {
       this.setState({ invalid: true })
+      analytics.track(analytics.names.attachmentChanged, {
+        ...analytics.attachment.attach,
+        ...analytics.documentType.InvalidLink
+      })
       return
     }
     this.formFieldset.setAttribute('disabled', 'disabled')
     attachment.meta(this.linkInput.value).then(this.attach, err => {
-      analytics.track(
-        analytics.names.attachmentChanged,
-        analytics.props.invalidLink
-      )
+      analytics.track(analytics.names.attachmentChanged, {
+        ...analytics.attachment.attach,
+        ...analytics.documentType.InvalidLink
+      })
       this.formFieldset.removeAttribute('disabled')
       this.setState({ err: err, invalid: true })
     })

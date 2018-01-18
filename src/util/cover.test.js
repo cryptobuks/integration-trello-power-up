@@ -7,12 +7,15 @@ jest.mock('../util/trello.js')
 jest.mock('../util/config.js')
 jest.mock('../util/attachment.js')
 
-const fetchRes = {
-  json: jest.fn()
-}
-global.fetch = jest.fn().mockReturnValue(Promise.resolve(fetchRes))
-
 describe('attachment', () => {
+  beforeEach(() => {
+    global.fetch = jest.fn().mockReturnValue(
+      Promise.resolve({
+        ok: true,
+        json: jest.fn()
+      })
+    )
+  })
   it('should attach cover', () => {
     return cover
       .attach({
@@ -32,9 +35,7 @@ describe('attachment', () => {
         shareUrl: 'https://invis.io/JHLK234K2'
       })
       .then(() => {
-        expect(
-          fetch
-        ).toBeCalledWith(
+        expect(fetch).toBeCalledWith(
           'https://api.trello.com/1/cards/1/?key=key&token=some_token&idAttachmentCover=33',
           { method: 'PUT' }
         )

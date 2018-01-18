@@ -19,8 +19,36 @@ export default class SectionItem extends React.Component {
   componentDidMount () {
     attachment
       .meta(this.props.attachment.url)
-      .then(meta => this.setState({ meta: meta }))
-      .catch(err => this.setState({ err: err }))
+      .then(meta => {
+        this.setState(
+          {
+            meta: meta,
+            documentType:
+              analytics.documentType[meta.shareType] ||
+              analytics.documentType.Default
+          },
+          () => {
+            analytics.track(
+              analytics.names.attachmentViewed,
+              this.state.documentType
+            )
+          }
+        )
+      })
+      .catch(err => {
+        this.setState(
+          {
+            err: err,
+            documentType: analytics.documentType.InvalidLink
+          },
+          () => {
+            analytics.track(
+              analytics.names.attachmentViewed,
+              this.state.documentType
+            )
+          }
+        )
+      })
   }
   componentDidUpdate () {
     this.t.sizeTo('#root')
@@ -42,11 +70,11 @@ export default class SectionItem extends React.Component {
 
   disconnect (event) {
     event.preventDefault()
-    let prop =
-      this.state.meta.shareType === 'UDF'
-        ? analytics.props.removeUDF
-        : analytics.props.removePrototype
-    analytics.track(analytics.names.attachmentChanged, prop)
+    analytics.track(analytics.names.attachmentChanged, {
+      ...this.state.documentType,
+      ...analytics.attachment.remove
+    })
+
     auth
       .token()
       .then(token => {
@@ -62,6 +90,7 @@ export default class SectionItem extends React.Component {
       return (
         <Preview
           meta={this.state.meta}
+          documentType={this.state.documentType}
           disconnect={this.disconnect}
           {...this.props}
         />
@@ -71,6 +100,7 @@ export default class SectionItem extends React.Component {
       return (
         <PreviewError
           err={this.state.err}
+          documentType={this.state.documentType}
           {...this.props}
           disconnect={this.disconnect}
         />

@@ -2,30 +2,50 @@
 
 exports[`App process button callback 1`] = `
 <div>
-  InVision T
+  InVision Trello Power-Up
+  <br />
+  Build date: 
+  <br />
+  Version: 
 </div>
 `;
 
 exports[`App renders renders and initializes TrelloPowerUp 1`] = `
 <div>
-  InVision T
+  InVision Trello Power-Up
+  <br />
+  Build date: 
+  <br />
+  Version: 
 </div>
 `;
 
 exports[`App should initialize card button 1`] = `
 <div>
-  InVision T
+  InVision Trello Power-Up
+  <br />
+  Build date: 
+  <br />
+  Version: 
 </div>
 `;
 
 exports[`App should initialize card section with attachments 1`] = `
 <div>
-  InVision T
+  InVision Trello Power-Up
+  <br />
+  Build date: 
+  <br />
+  Version: 
 </div>
 `;
 
 exports[`App should not innitialize card section with attachments 1`] = `
 <div>
-  InVision T
+  InVision Trello Power-Up
+  <br />
+  Build date: 
+  <br />
+  Version: 
 </div>
 `;

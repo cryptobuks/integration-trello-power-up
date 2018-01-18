@@ -59,6 +59,13 @@ export default class App extends React.Component {
     ]
   }
   render () {
-    return <div>InVision T</div>
+    return (
+      <div>
+        InVision Trello Power-Up<br />
+        Build date: {config.buildDate}
+        <br />
+        Version: {config.version}
+      </div>
+    )
   }
 }

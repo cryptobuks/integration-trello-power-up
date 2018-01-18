@@ -24,14 +24,28 @@ export function make (meta) {
   return auth
     .token()
     .then(token => {
-      return findCover(meta).then(a => a || attach(meta)).then(a => [token, a])
+      return findCover(meta)
+        .then(a => a || attach(meta))
+        .then(a => [token, a])
     })
     .spread((token, attachment) => {
       let context = t.getContext()
-      return fetch(
-        `https://api.trello.com/1/cards/${context.card}/?key=${config.clientKey}&token=${token}&idAttachmentCover=${attachment.id}`,
-        { method: 'PUT' }
-      )
+      return new T.Promise((resolve, reject) => {
+        fetch(
+          `https://api.trello.com/1/cards/${context.card}/?key=${
+            config.clientKey
+          }&token=${token}&idAttachmentCover=${attachment.id}`,
+          { method: 'PUT' }
+        )
+          .then(res => {
+            if (res.ok) {
+              resolve(res.json())
+            } else {
+              reject(new Error(`unable to set card cover ${res.statusText}`))
+            }
+          })
+          .catch(reject)
+      })
     })
 }
 

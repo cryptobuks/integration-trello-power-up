@@ -3,14 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-plugin-node": "^5.2.1",
-    "moment": "^2.18.1",
-    "react": "^15.6.1",
-    "react-addons-update": "^15.6.0",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2"
-  },
-  "devDependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -32,6 +24,7 @@
     "eslint-plugin-flowtype": "2.35.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-standard": "3.0.1",
     "extract-text-webpack-plugin": "3.0.0",
@@ -42,8 +35,10 @@
     "husky": "^0.14.3",
     "jest": "^21.0.1",
     "jest-cli": "^21.0.1",
-    "jsdom": "^11.2.0",
+    "jsdom": "^11.5.1",
+    "jsdom-global": "^3.0.2",
     "lint-staged": "^4.0.3",
+    "moment": "^2.18.1",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
@@ -51,8 +46,12 @@
     "prettier-eslint-cli": "^4.2.1",
     "prettier-standard": "^8.0.0",
     "promise": "8.0.1",
+    "react": "^15.6.1",
+    "react-addons-update": "^15.6.0",
     "react-dev-utils": "^3.1.0",
+    "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
+    "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.10",
     "react-test-renderer": "^15.6.1",
     "sinon": "^3.2.1",
@@ -108,10 +107,11 @@
     "flow": "flow",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js",
     "codecov": "codecov"
   },
   "jest": {
+    "testEnvironment": "node",
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
@@ -122,7 +122,6 @@
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
     ],
-    "testEnvironment": "node",
     "testURL": "http://localhost",
     "transform": {
       "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",

@@ -69,7 +69,11 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="comment"
           handler={[Function]}
-          name="comment"
+          prop={
+            Object {
+              "linkClicked": "comment",
+            }
+          }
           text="Comment"
           url="https://projects.invisionapp.com/comments"
         >
@@ -87,7 +91,11 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="preview"
           handler={[Function]}
-          name="preview"
+          prop={
+            Object {
+              "linkClicked": "preview",
+            }
+          }
           text="Preview"
           url="https://projects.invisionapp.com/preview"
         >
@@ -105,7 +113,11 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="inspect"
           handler={[Function]}
-          name="inspect"
+          prop={
+            Object {
+              "linkClicked": "inspect",
+            }
+          }
           text="Inspect"
           url="https://projects.invisionapp.com/inspect"
         >
@@ -249,7 +261,11 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="comment"
           handler={[Function]}
-          name="comment"
+          prop={
+            Object {
+              "linkClicked": "comment",
+            }
+          }
           text="Comment"
           url="https://projects.invisionapp.com/comments"
         >
@@ -267,7 +283,11 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="preview"
           handler={[Function]}
-          name="preview"
+          prop={
+            Object {
+              "linkClicked": "preview",
+            }
+          }
           text="Preview"
           url="https://projects.invisionapp.com/preview"
         >
@@ -285,7 +305,11 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="inspect"
           handler={[Function]}
-          name="inspect"
+          prop={
+            Object {
+              "linkClicked": "inspect",
+            }
+          }
           text="Inspect"
           url="https://projects.invisionapp.com/inspect"
         >
@@ -429,7 +453,11 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="comment"
           handler={[Function]}
-          name="comment"
+          prop={
+            Object {
+              "linkClicked": "comment",
+            }
+          }
           text="Comment"
           url="https://projects.invisionapp.com/comments"
         >
@@ -447,7 +475,11 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="preview"
           handler={[Function]}
-          name="preview"
+          prop={
+            Object {
+              "linkClicked": "preview",
+            }
+          }
           text="Preview"
           url="https://projects.invisionapp.com/preview"
         >
@@ -465,7 +497,11 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="inspect"
           handler={[Function]}
-          name="inspect"
+          prop={
+            Object {
+              "linkClicked": "inspect",
+            }
+          }
           text="Inspect"
           url="https://projects.invisionapp.com/inspect"
         >
@@ -603,7 +639,11 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="comment"
           handler={[Function]}
-          name="comment"
+          prop={
+            Object {
+              "linkClicked": "comment",
+            }
+          }
           text="Comment"
           url="https://projects.invisionapp.com/comments"
         >
@@ -621,7 +661,11 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="preview"
           handler={[Function]}
-          name="preview"
+          prop={
+            Object {
+              "linkClicked": "preview",
+            }
+          }
           text="Preview"
           url="https://projects.invisionapp.com/preview"
         >
@@ -639,7 +683,11 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="inspect"
           handler={[Function]}
-          name="inspect"
+          prop={
+            Object {
+              "linkClicked": "inspect",
+            }
+          }
           text="Inspect"
           url="https://projects.invisionapp.com/inspect"
         >
@@ -777,7 +825,11 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="comment"
           handler={[Function]}
-          name="comment"
+          prop={
+            Object {
+              "linkClicked": "comment",
+            }
+          }
           text="Comment"
           url="https://projects.invisionapp.com/comments"
         >
@@ -795,7 +847,11 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="preview"
           handler={[Function]}
-          name="preview"
+          prop={
+            Object {
+              "linkClicked": "preview",
+            }
+          }
           text="Preview"
           url="https://projects.invisionapp.com/preview"
         >
@@ -813,7 +869,11 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="inspect"
           handler={[Function]}
-          name="inspect"
+          prop={
+            Object {
+              "linkClicked": "inspect",
+            }
+          }
           text="Inspect"
           url="https://projects.invisionapp.com/inspect"
         >

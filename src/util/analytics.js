@@ -10,33 +10,30 @@ const Analytics = {
       window.measure.collect(name, props)
     }
   },
-  props: {
+  documentType: {
+    UDF: { documentType: 'udf' },
+    V6: { documentType: 'prototype' },
+    V7: { documentType: 'prototype' },
+    Default: { documentType: 'unknown' },
+    InvalidLink: { documentType: 'invalidLink' }
+  },
+  attachment: {
+    remove: { attachmentAction: 'remove' },
+    attach: { attachmentAction: 'attach' }
+  },
+  cover: {
+    added: {
+      coverAction: 'added'
+    },
+    removed: {
+      coverAction: 'removed'
+    }
+  },
+  links: {
     thumbnail: { linkClicked: 'thumbnail' },
     inspect: { linkClicked: 'inspect' },
     preview: { linkClicked: 'preview' },
-    comment: { linkClicked: 'comment' },
-    removeUDF: { attachmentAction: 'remove', documentType: 'udf' },
-    removePrototype: {
-      attachmentAction: 'remove',
-      documentType: 'prototype'
-    },
-    attachUDF: { attachmentAction: 'attach', documentType: 'udf' },
-    attachPrototype: {
-      attachmentAction: 'attach',
-      documentType: 'prototype'
-    },
-    invalidLink: {
-      attachmentAction: 'invalidLink'
-    },
-    coverAdded: {
-      coverAction: 'added'
-    },
-    coverRemoved: {
-      coverAction: 'removed'
-    },
-    viewEmpty: { documentType: 'none' },
-    viewPrototype: { documentType: 'prototype' },
-    viewUDF: { documentType: 'udf' }
+    comment: { linkClicked: 'comment' }
   },
   names: {
     linkClicked: 'Trello.Link.Clicked',

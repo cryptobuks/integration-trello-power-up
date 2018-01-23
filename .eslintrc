@@ -7,5 +7,5 @@
   "plugins": [
     "react"
   ],
-  "globals": { "fetch": false }
+  "globals": { "fetch": false, jest:false }
 }

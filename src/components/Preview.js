@@ -16,26 +16,21 @@ export default class Preview extends React.Component {
     this.getLinks = this.getLinks.bind(this)
   }
 
-  componentDidMount () {
-    const { names: { attachmentViewed }, props } = analytics
-    if (!this.props.meta.shareUrl) {
-      return analytics.track(attachmentViewed, props.viewEmpty)
-    }
-    if (this.props.meta.shareType === 'UDF') {
-      return analytics.track(attachmentViewed, props.viewUDF)
-    }
-    return analytics.track(attachmentViewed, props.viewPrototype)
-  }
-
   makeCover (event) {
     event.preventDefault()
-    analytics.track(analytics.names.cardCover, analytics.props.coverAdded)
+    analytics.track(analytics.names.cardCover, {
+      ...analytics.cover.added,
+      ...this.props.documentType
+    })
     return cover.make(this.props.meta).then(this.props.updateCover)
   }
 
   removeCover (event) {
     event.preventDefault()
-    analytics.track(analytics.names.cardCover, analytics.props.coverRemoved)
+    analytics.track(analytics.names.cardCover, {
+      ...analytics.cover.removed,
+      ...this.props.documentType
+    })
     return cover.remove(this.props.meta).then(this.props.updateCover)
   }
 
@@ -68,19 +63,28 @@ export default class Preview extends React.Component {
         url: this.props.meta.commentUrl,
         text: 'Comment',
         className: 'comment',
-        name: analytics.props.comment
+        prop: {
+          ...this.props.documentType,
+          ...analytics.links.comment
+        }
       },
       {
         url: this.props.meta.previewUrl,
         text: 'Preview',
         className: 'preview',
-        name: analytics.props.preview
+        prop: {
+          ...this.props.documentType,
+          ...analytics.links.preview
+        }
       },
       {
         url: this.props.meta.inspectUrl,
         text: 'Inspect',
         className: 'inspect',
-        name: analytics.props.inspect
+        prop: {
+          ...this.props.documentType,
+          ...analytics.links.inspect
+        }
       }
     ]
   }
@@ -100,10 +104,10 @@ export default class Preview extends React.Component {
           title={this.props.meta.screenName}
           style={backgroundStyle}
           onClick={() =>
-            analytics.track(
-              analytics.names.linkClicked,
-              analytics.props.thumbnail
-            )
+            analytics.track(analytics.names.linkClicked, {
+              ...this.props.documentType,
+              ...analytics.links.thumbnail
+            })
           }
         />
         <p className='SectionItemDetails attachment-thumbnail-details'>
@@ -116,7 +120,7 @@ export default class Preview extends React.Component {
                 <SectionItemLink
                   {...link}
                   handler={() =>
-                    analytics.track(analytics.names.linkClicked, link.name)
+                    analytics.track(analytics.names.linkClicked, link.prop)
                   }
                   key={this.props.attachment.id + link.className}
                 />

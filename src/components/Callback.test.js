@@ -1,3 +1,4 @@
+import 'jsdom-global/register'
 import React from 'react'
 import { mount } from 'enzyme'
 import toJson from 'enzyme-to-json'
@@ -30,7 +31,7 @@ describe('Callback', () => {
     window.localStorage = {
       setItem: jest.fn()
     }
-    window.location.hash = 'token=some_token'
+    window.location = { hash: '#token=some_token' }
     window.close = jest.fn()
     setTimeout.mockReset()
     setup()
@@ -45,7 +46,7 @@ describe('Callback', () => {
     window.opener = {
       authorize: jest.fn()
     }
-    window.location.hash = 'token=some_token'
+    window.location = { hash: '#token=some_token' }
     window.close = jest.fn()
     setTimeout.mockReset()
     setup()

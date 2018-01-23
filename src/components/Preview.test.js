@@ -1,3 +1,4 @@
+import 'jsdom-global/register'
 import React from 'react'
 import { mount } from 'enzyme'
 import Promise from 'bluebird'
@@ -45,7 +46,6 @@ const setup = cover => {
 describe('Preview', () => {
   beforeAll(() => {
     sinon.spy(Preview.prototype, 'setState')
-    global.fetch = jest.fn()
   })
 
   beforeEach(() => {
@@ -60,9 +60,15 @@ describe('Preview', () => {
         ctx.wrapper.find('a.preview').simulate('click')
         ctx.wrapper.find('a.inspect').simulate('click')
       }).then(() => {
-        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', 'inspect')
-        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', 'preview')
-        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', 'comment')
+        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', {
+          ...analytics.links.inspect
+        })
+        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', {
+          ...analytics.links.preview
+        })
+        expect(analytics.track).toHaveBeenCalledWith('Trello.Link.Clicked', {
+          ...analytics.links.comment
+        })
       })
     })
     it('should be able to remove cover', () => {
@@ -70,7 +76,9 @@ describe('Preview', () => {
       return Promise.attempt(() => {
         ctx.wrapper.find('a.remove-cover').simulate('click')
       }).then(() => {
-        expect(analytics.track).lastCalledWith('Trello.CardCover.Changed', 'removed')
+        expect(analytics.track).lastCalledWith('Trello.CardCover.Changed', {
+          ...analytics.cover.removed
+        })
       })
     })
     it('should be able disconnect prototype and cover', () => {
@@ -86,7 +94,9 @@ describe('Preview', () => {
       return Promise.attempt(() => {
         ctx.wrapper.find('a.make-cover').simulate('click')
       }).then(() => {
-        expect(analytics.track).lastCalledWith('Trello.CardCover.Changed', 'added')
+        expect(analytics.track).lastCalledWith('Trello.CardCover.Changed', {
+          ...analytics.cover.added
+        })
       })
     })
     it('should be able disconnect prototype and cover', () => {

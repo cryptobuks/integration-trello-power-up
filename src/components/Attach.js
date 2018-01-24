@@ -45,10 +45,10 @@ export default class Attach extends React.Component {
       .then(() => this.t.remove('card', 'shared', '_'))
   }
 
-  attach (meta) {
+  attach (link, meta) {
     return this.t
       .attach({
-        url: meta.shareUrl,
+        url: link,
         name: meta.screenName
       })
       .then(() => {
@@ -76,7 +76,8 @@ export default class Attach extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault()
-    if (!this.linkInput.value || !isInVisionUrl(this.linkInput.value)) {
+    let link = this.linkInput.value
+    if (!link || !isInVisionUrl(link)) {
       this.setState({ invalid: true })
       analytics.track(analytics.names.attachmentChanged, {
         ...analytics.attachment.attach,
@@ -85,14 +86,17 @@ export default class Attach extends React.Component {
       return
     }
     this.formFieldset.setAttribute('disabled', 'disabled')
-    attachment.meta(this.linkInput.value).then(this.attach, err => {
-      analytics.track(analytics.names.attachmentChanged, {
-        ...analytics.attachment.attach,
-        ...analytics.documentType.InvalidLink
-      })
-      this.formFieldset.removeAttribute('disabled')
-      this.setState({ err: err, invalid: true })
-    })
+    attachment.meta(link).then(
+      meta => this.attach(link, meta),
+      err => {
+        analytics.track(analytics.names.attachmentChanged, {
+          ...analytics.attachment.attach,
+          ...analytics.documentType.InvalidLink
+        })
+        this.formFieldset.removeAttribute('disabled')
+        this.setState({ err: err, invalid: true })
+      }
+    )
   }
 
   errorMessage () {

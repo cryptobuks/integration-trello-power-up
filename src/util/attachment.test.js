@@ -5,7 +5,7 @@ jest.mock('../util/trello.js')
 jest.mock('../util/config.js')
 
 const fetchRes = {
-  json: jest.fn(),
+  json: jest.fn().mockReturnValue({}),
   ok: true
 }
 

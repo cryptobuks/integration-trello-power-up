@@ -16,6 +16,9 @@ export function meta (url) {
         }
       })
       .catch(reject)
+  }).then(meta => {
+    meta.shareUrl = url
+    return meta
   })
 }
 

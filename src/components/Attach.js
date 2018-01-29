@@ -45,10 +45,10 @@ export default class Attach extends React.Component {
       .then(() => this.t.remove('card', 'shared', '_'))
   }
 
-  attach (link, meta) {
+  attach (meta) {
     return this.t
       .attach({
-        url: link,
+        url: meta.shareUrl,
         name: meta.screenName
       })
       .then(() => {
@@ -87,7 +87,7 @@ export default class Attach extends React.Component {
     }
     this.formFieldset.setAttribute('disabled', 'disabled')
     attachment.meta(link).then(
-      meta => this.attach(link, meta),
+      meta => this.attach(meta),
       err => {
         analytics.track(analytics.names.attachmentChanged, {
           ...analytics.attachment.attach,

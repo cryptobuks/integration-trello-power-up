@@ -81,7 +81,8 @@
       "fetch",
       "console",
       "TrelloPowerUp",
-      "localStorage"
+      "localStorage",
+      "URL"
     ],
     "ignore": [
       "dist",

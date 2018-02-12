@@ -3,7 +3,11 @@ import T from './trello.js'
 
 export function meta (url) {
   return new T.Promise((resolve, reject) => {
-    fetch(`${config.metaUrl}/share?shareurl=${encodeURIComponent(url)}`)
+    let metaUrl = config.getMetaUrl(url)
+    if (metaUrl === '') {
+      reject(new Error(`unable to parse shared link`))
+    }
+    fetch(`${metaUrl}/share?shareurl=${encodeURIComponent(url)}`)
       .then(res => {
         if (res.ok) {
           resolve(res.json())

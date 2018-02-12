@@ -177,10 +177,10 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
           Modified:
           <span
             className="date"
-            title="5 months ago"
+            title="6 months ago"
           >
              
-            5 months ago
+            6 months ago
           </span>
            
           by 
@@ -369,10 +369,10 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
           Modified:
           <span
             className="date"
-            title="5 months ago"
+            title="6 months ago"
           >
              
-            5 months ago
+            6 months ago
           </span>
            
           by 
@@ -561,10 +561,10 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
           Modified:
           <span
             className="date"
-            title="5 months ago"
+            title="6 months ago"
           >
              
-            5 months ago
+            6 months ago
           </span>
            
           by 
@@ -747,10 +747,10 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
           Modified:
           <span
             className="date"
-            title="5 months ago"
+            title="6 months ago"
           >
              
-            5 months ago
+            6 months ago
           </span>
            
           by 
@@ -933,10 +933,10 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
           Modified:
           <span
             className="date"
-            title="5 months ago"
+            title="6 months ago"
           >
              
-            5 months ago
+            6 months ago
           </span>
            
           by 

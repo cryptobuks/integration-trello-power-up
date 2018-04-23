@@ -48,7 +48,7 @@ export default class Section extends React.Component {
   render () {
     return (
       <div className='u-clearfix'>
-        {this.state.attachments.map(attachment =>
+        {this.state.attachments.map(attachment => (
           <SectionItem
             {...this.props}
             attachment={attachment}
@@ -57,7 +57,7 @@ export default class Section extends React.Component {
             key={attachment.id}
             updateCover={this.fetch}
           />
-        )}
+        ))}
       </div>
     )
   }

@@ -1,47 +1,27 @@
 import { isInVisionUrl } from './url.js'
 
-test('https://invis.io/NQ8979O8R', () => {
-  expect(isInVisionUrl('https://invis.io/NQ8979O8R')).toBe(true)
+const validUrls = [
+  'https://in-v6.preview.invisionapp.com/prototype/Slack-Integration-v7-cje6539090003on0op02qgh50',
+  'https://in-v7.invisionapp.com/prototype/firetruck-cjeadm21700093y0pxpbyzlsf',
+  'https://design.invisionapp.com/prototype/Slack-Integration-v7-cjekd47ui00026a0q0ofvab6c/',
+  'https://ent.invisionbeta.com/share/5JD97E4',
+  'https://invis.io/NQ8979O8R',
+  'https://projects.invisionapp.com/share/2B7ZYDVZ3',
+  'https://in.invisionapp.com/share/X28MGQD4Y',
+  'https://projects.staging.invision.works/share/2B7ZYDVZ3',
+  'https://projects.testing10.testing.invision.works/share/GW5ZE',
+  'http://projects.local.invisionapp.com/share/TK3YM',
+  'http://projects.local.invisionapp.com/share/TK3YM/538_Intro',
+  'https://amazing.invisionbeta.com/public/share/87WTI4SMT',
+  'https://amazing.invisionbeta.com/public/share/87WTI4SMT#screens/12345'
+]
+
+validUrls.forEach(url => {
+  test(`${url} should be valid`, () => {
+    expect(isInVisionUrl(url)).toBe(true)
+  })
 })
 
-test('https://projects.invisionapp.com/share/2B7ZYDVZ3', () => {
-  expect(
-    isInVisionUrl('https://projects.invisionapp.com/share/2B7ZYDVZ3')
-  ).toBe(true)
-})
-
-test('https://in.invisionapp.com/share/X28MGQD4Y', () => {
-  expect(isInVisionUrl('https://in.invisionapp.com/share/X28MGQD4Y')).toBe(true)
-})
-
-test('https://projects.staging.invision.works/share/2B7ZYDVZ3', () => {
-  expect(
-    isInVisionUrl('https://projects.staging.invision.works/share/2B7ZYDVZ3')
-  ).toBe(true)
-})
-
-test('https://projects.testing10.testing.invision.works/share/GW5ZE', () => {
-  expect(
-    isInVisionUrl(
-      'https://projects.testing10.testing.invision.works/share/GW5ZE'
-    )
-  ).toBe(true)
-})
-
-test('http://projects.local.invisionapp.com/share/TK3YM', () => {
-  expect(
-    isInVisionUrl('https://projects.local.invisionapp.com/share/TK3YM')
-  ).toBe(true)
-})
-
-test('http://projects.local.invisionapp.com/share/TK3YM/538_Intro', () => {
-  expect(
-    isInVisionUrl(
-      'https://projects.local.invisionapp.com/share/TK3YM/538_Intro'
-    )
-  ).toBe(true)
-})
-
-test('https://google.com', () => {
+test('invalid url', () => {
   expect(isInVisionUrl('https://google.com')).toBe(false)
 })

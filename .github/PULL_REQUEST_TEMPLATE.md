@@ -1,8 +1,5 @@
-#### What are the relevant JIRA stories?
-
-#### Technical Documentation links?
+#### Description
 
 #### How should this be tested?
 
 #### Screenshots (if appropriate)
-

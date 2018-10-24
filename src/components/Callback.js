@@ -1,5 +1,6 @@
 import React from 'react'
 import './Callback.css'
+import window from '../util/window'
 
 export default class Callback extends React.Component {
   componentDidMount () {

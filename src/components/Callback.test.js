@@ -5,8 +5,7 @@ import toJson from 'enzyme-to-json'
 import Callback from './Callback'
 import Promise from 'bluebird'
 
-global.window = {}
-
+jest.mock('../util/window.js')
 jest.mock('../util/trello.js')
 jest.mock('../util/config.js')
 jest.mock('../util/auth.js')
@@ -28,11 +27,6 @@ const setup = () => {
 
 describe('Callback', () => {
   it('should render and set token to local storage', () => {
-    window.localStorage = {
-      setItem: jest.fn()
-    }
-    window.location = { hash: '#token=some_token' }
-    window.close = jest.fn()
     setTimeout.mockReset()
     setup()
     jest.runAllTimers()
@@ -43,11 +37,6 @@ describe('Callback', () => {
     })
   })
   it('should render and set token opener', () => {
-    window.opener = {
-      authorize: jest.fn()
-    }
-    window.location = { hash: '#token=some_token' }
-    window.close = jest.fn()
     setTimeout.mockReset()
     setup()
     jest.runAllTimers()

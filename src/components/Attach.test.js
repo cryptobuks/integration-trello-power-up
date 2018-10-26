@@ -29,7 +29,7 @@ describe('Attach', () => {
     const ctx = setup()
     return Promise.attempt(() => {
       const input = ctx.wrapper.find('input')
-      input.node.value = 'https://invis.io/ASKGHA243'
+      input.instance().value = 'https://invis.io/ASKGHA243'
       input.simulate('change', input)
       ctx.wrapper.find('form').simulate('submit')
     })

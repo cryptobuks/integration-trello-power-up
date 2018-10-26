@@ -36,7 +36,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
       "userName": "Yauhen Ivashkevich",
     }
   }
-  updateCover={[Function]}
+  updateCover={[MockFunction]}
 >
   <div
     className="SectionItem basic-attachment-list-item"
@@ -69,6 +69,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="comment"
           handler={[Function]}
+          key="1comment"
           prop={
             Object {
               "linkClicked": "comment",
@@ -91,6 +92,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="preview"
           handler={[Function]}
+          key="1preview"
           prop={
             Object {
               "linkClicked": "preview",
@@ -113,6 +115,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="inspect"
           handler={[Function]}
+          key="1inspect"
           prop={
             Object {
               "linkClicked": "inspect",
@@ -139,6 +142,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         <SectionItemLink
           className="remove-cover"
           handler={[Function]}
+          key="1remove-cover"
           text="Remove from cover"
         >
           <span>
@@ -153,6 +157,7 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
         </SectionItemLink>
         <SectionItemLink
           className="disconnect"
+          key="1disconnect"
           text="Disconnect prototype"
         >
           <span>
@@ -177,10 +182,10 @@ exports[`Preview Preview with cover should be able disconnect prototype and cove
           Modified:
           <span
             className="date"
-            title="8 months ago"
+            title="a year ago"
           >
              
-            8 months ago
+            a year ago
           </span>
            
           by 
@@ -228,7 +233,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
       "userName": "Yauhen Ivashkevich",
     }
   }
-  updateCover={[Function]}
+  updateCover={[MockFunction]}
 >
   <div
     className="SectionItem basic-attachment-list-item"
@@ -261,6 +266,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="comment"
           handler={[Function]}
+          key="1comment"
           prop={
             Object {
               "linkClicked": "comment",
@@ -283,6 +289,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="preview"
           handler={[Function]}
+          key="1preview"
           prop={
             Object {
               "linkClicked": "preview",
@@ -305,6 +312,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="inspect"
           handler={[Function]}
+          key="1inspect"
           prop={
             Object {
               "linkClicked": "inspect",
@@ -331,6 +339,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         <SectionItemLink
           className="remove-cover"
           handler={[Function]}
+          key="1remove-cover"
           text="Remove from cover"
         >
           <span>
@@ -345,6 +354,7 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
         </SectionItemLink>
         <SectionItemLink
           className="disconnect"
+          key="1disconnect"
           text="Disconnect prototype"
         >
           <span>
@@ -369,10 +379,10 @@ exports[`Preview Preview with cover should be able to remove cover 1`] = `
           Modified:
           <span
             className="date"
-            title="8 months ago"
+            title="a year ago"
           >
              
-            8 months ago
+            a year ago
           </span>
            
           by 
@@ -420,7 +430,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
       "userName": "Yauhen Ivashkevich",
     }
   }
-  updateCover={[Function]}
+  updateCover={[MockFunction]}
 >
   <div
     className="SectionItem basic-attachment-list-item"
@@ -453,6 +463,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="comment"
           handler={[Function]}
+          key="1comment"
           prop={
             Object {
               "linkClicked": "comment",
@@ -475,6 +486,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="preview"
           handler={[Function]}
+          key="1preview"
           prop={
             Object {
               "linkClicked": "preview",
@@ -497,6 +509,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="inspect"
           handler={[Function]}
+          key="1inspect"
           prop={
             Object {
               "linkClicked": "inspect",
@@ -523,6 +536,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         <SectionItemLink
           className="remove-cover"
           handler={[Function]}
+          key="1remove-cover"
           text="Remove from cover"
         >
           <span>
@@ -537,6 +551,7 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
         </SectionItemLink>
         <SectionItemLink
           className="disconnect"
+          key="1disconnect"
           text="Disconnect prototype"
         >
           <span>
@@ -561,10 +576,10 @@ exports[`Preview Preview with cover should be able to track navigation clicks 1`
           Modified:
           <span
             className="date"
-            title="8 months ago"
+            title="a year ago"
           >
              
-            8 months ago
+            a year ago
           </span>
            
           by 
@@ -606,7 +621,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
       "userName": "Yauhen Ivashkevich",
     }
   }
-  updateCover={[Function]}
+  updateCover={[MockFunction]}
 >
   <div
     className="SectionItem basic-attachment-list-item"
@@ -639,6 +654,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="comment"
           handler={[Function]}
+          key="1comment"
           prop={
             Object {
               "linkClicked": "comment",
@@ -661,6 +677,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="preview"
           handler={[Function]}
+          key="1preview"
           prop={
             Object {
               "linkClicked": "preview",
@@ -683,6 +700,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="inspect"
           handler={[Function]}
+          key="1inspect"
           prop={
             Object {
               "linkClicked": "inspect",
@@ -709,6 +727,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         <SectionItemLink
           className="make-cover"
           handler={[Function]}
+          key="1make-cover"
           text="Make cover"
         >
           <span>
@@ -723,6 +742,7 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
         </SectionItemLink>
         <SectionItemLink
           className="disconnect"
+          key="1disconnect"
           text="Disconnect prototype"
         >
           <span>
@@ -747,10 +767,10 @@ exports[`Preview Preview without cover should be able disconnect prototype and c
           Modified:
           <span
             className="date"
-            title="8 months ago"
+            title="a year ago"
           >
              
-            8 months ago
+            a year ago
           </span>
            
           by 
@@ -792,7 +812,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
       "userName": "Yauhen Ivashkevich",
     }
   }
-  updateCover={[Function]}
+  updateCover={[MockFunction]}
 >
   <div
     className="SectionItem basic-attachment-list-item"
@@ -825,6 +845,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="comment"
           handler={[Function]}
+          key="1comment"
           prop={
             Object {
               "linkClicked": "comment",
@@ -847,6 +868,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="preview"
           handler={[Function]}
+          key="1preview"
           prop={
             Object {
               "linkClicked": "preview",
@@ -869,6 +891,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="inspect"
           handler={[Function]}
+          key="1inspect"
           prop={
             Object {
               "linkClicked": "inspect",
@@ -895,6 +918,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         <SectionItemLink
           className="make-cover"
           handler={[Function]}
+          key="1make-cover"
           text="Make cover"
         >
           <span>
@@ -909,6 +933,7 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
         </SectionItemLink>
         <SectionItemLink
           className="disconnect"
+          key="1disconnect"
           text="Disconnect prototype"
         >
           <span>
@@ -933,10 +958,10 @@ exports[`Preview Preview without cover should be able to set cover 1`] = `
           Modified:
           <span
             className="date"
-            title="8 months ago"
+            title="a year ago"
           >
              
-            8 months ago
+            a year ago
           </span>
            
           by 
